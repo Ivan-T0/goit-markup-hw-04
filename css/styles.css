@@ -273,23 +273,31 @@ body{
 
 .about-list {
     display: flex;
+    
     gap: 24px;   
 }
 .icons-about-item{
     text-align: center;
     flex-basis: calc((100% - 72px) / 4);
-    
+    width: 264px;
+    height: 112px;
 
 
     background-color: var(--bgr-light-blue);
 }
 .icons-about-link{
-    display: block;
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    
     width: 100%;
+    height: 100%;
+    
 }
 .about-svg{
+    display: block;
     width: 64px;
-    right: 64px;
+    height: 64px;
     
 }
 
@@ -413,6 +421,8 @@ body{
     text-align: center;
     border-radius: 50%;
     background-color: var(--bgr-blue);
+    width: 40px;
+    height: 40px;
     
 }
 
@@ -460,12 +470,14 @@ body{
 
 .social-link {
     color: var(--c-white);
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 12px;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .icon-list-social{
@@ -496,13 +508,19 @@ body{
 }
 .customers-link {
   color: var(--border-c-icon);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-c-icon);
+        border-radius: 4px;
     
 }
 
 .customers-icon-item {
-   
+   width: 168px;
+   height: 88px;
     
 }
 
@@ -524,11 +542,10 @@ body{
 .customers-svg {
     fill: currentColor;
     display: block;
-    width: 168px;
-    height: 88px;
+    width: 104px;
+    height: 56px;
 
-    border: 1px solid var(--border-c-icon);
-    border-radius: 4px;
+    
 }
 
 
@@ -585,7 +602,7 @@ body{
     height: 24px;
     fill: currentColor;
     display: block;
-    width: 100%;
+   
     
 }
 .social-media{
@@ -594,12 +611,13 @@ body{
 .social-link-footer{
 
     color: var(--c-white);
-        display: block;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        padding: 8px;
+        width: 100%;
+        height: 100%;
+        
 }
 .social-text{
     margin-bottom: 16px;
@@ -619,6 +637,8 @@ body{
         border-radius: 50%;
         background-color: var(--bgr-gray);
 
+        width: 40px;
+        height: 40px;
        
 }
     
