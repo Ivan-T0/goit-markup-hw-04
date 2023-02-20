@@ -13,7 +13,7 @@
     --c-prtf-border:#E7E9FC;
     --bgr-black:#2E2F42;
     --border-c-icon:#8E8F99;
-    
+    --c-green-icon:#31D0AA;
 
 
 
@@ -170,9 +170,10 @@ body{
 
 
 .hero{
-   background-color: #2E2F42;
+    max-width: 1440px;
     padding-bottom: 188px;
     padding-top: 188px;
+    margin:0 auto;
     background-image: linear-gradient(0deg,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -180,7 +181,7 @@ body{
         
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     
    
 }
@@ -277,14 +278,22 @@ body{
     gap: 24px;   
 }
 .icons-about-item{
-    text-align: center;
-    flex-basis: calc((100% - 72px) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 264px;
     height: 112px;
 
-
+    border-radius: 4px;
     background-color: var(--bgr-light-blue);
 }
+.icons-about-item:hover,
+.icons-about-item:focus{
+    border: 1px solid var(--bgr-blue2);
+    
+}
+
+
 .icons-about-link{
     display: flex;
     align-items: center;
@@ -409,7 +418,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: calc((100% - 72px) / 4);
+    align-items: center;
+    
     
    
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -417,15 +427,21 @@ body{
 }
 .icon-list-item{
     
-    flex-basis: calc((100% - 72px) / 4);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 50%;
-    background-color: var(--bgr-blue);
+    background-color: var(--c-blue);
     width: 40px;
     height: 40px;
     
 }
 
+.icon-list-item:hover,
+.icon-list-item:focus{
+    background-color: var(--bgr-blue2);
+}
 
 
 
@@ -516,6 +532,11 @@ body{
     border: 1px solid var(--border-c-icon);
         border-radius: 4px;
     
+}
+.customers-link:hover,
+.customers-link:focus{
+    border: 1px solid var(--bgr-blue2);
+    color: var(--bgr-blue2);
 }
 
 .customers-icon-item {
@@ -632,14 +653,20 @@ body{
 }
 
 .icon-list-footer{
-    flex-basis: calc((100% - 72px) / 4);
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         border-radius: 50%;
         background-color: var(--bgr-gray);
 
         width: 40px;
         height: 40px;
        
+}
+.icon-list-footer:hover,
+.icon-list-footer:focus{
+    background-color: var(--c-green-icon);
 }
     
 .logo-link{
